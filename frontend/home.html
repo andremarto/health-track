@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid navigation-main">
+          <a class="navbar-brand" href="/">
+            <img src="./img/logo.svg" class="logo-main" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Monitor Cardíaco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Calorias consumidas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Relatórios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Exames</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Profile -->
+    <section class="d-flex align-items-center m-3 pt-3">
+      <div class="wrapper-profile d-flex align-items-center">
+        <img src="./img/profile.svg" alt="">
+        <span>Jhon Doe</span>
+      </div>
+    </section>
+    <!-- Informações Pessoais -->
+    <section class="d-flex justify-content-between mt-5">
+      <div class="card-info py-4">
+        <div class="d-flex mx-3 text-info-personal">
+          <p>Sexo: <span>Masculino</span> </p>
+        </div>
+        <div class="d-flex mx-3 text-info-personal">
+          <p>Idade: <span>28</span> </p>
+        </div>
+        <div class="d-flex mx-3 text-info-personal">
+          <p>Tipo Sanguíneo: <span>A+</span> </p>
+        </div>
+      </div>
+      <div class="card-info py-4">
+        <div class="d-flex mx-3 text-info-personal">
+          <p>Peso: <span>80kg</span> </p>
+        </div>
+        <div class="d-flex mx-3 text-info-personal">
+          <p>Altura: <span>177cm</span> </p>
+        </div>
+        <div class="d-flex mx-3 text-info-personal">
+          <p>Meta: <span>Emagrecer</span> </p>
+        </div>
+      </div>
+    </section>
+    <!-- Resumo -->
+    <section class="wrapper-resumo m-3 pt-3">
+      <h4 class="my-4">Resumo</h4>
+      <div class="wrapper-grafico d-flex">
+        <div class="grafico-container">
+          <div class="d-flex justify-content-between align-items-center my-3 wrapper-grafico">
+            <h5>imc</h5>
+            <img src="./img/batimento-cardiaco.svg" alt="">
+          </div>
+          <canvas id="chartHome"></canvas>
+        </div>
+        <div class="grafico-container grafico-calorias">
+          <div class="d-flex justify-content-between align-items-center my-3 wrapper-grafico">
+            <h5>Calorias</h5>
+            <img src="./img/coracao.svg" alt="">
+          </div>
+          <canvas id="chartCalorias"></canvas>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="wrapper-indices">
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h5>Coração</h5>
+            <img src="./img/coracao.svg" alt="">
+          </div>
+          <p class="indice-bpm">125 <span class="feature-indice">bpm</span></p>
+        </div>
+        <div class="wrapper-indices columns-two">
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <h5>Coração</h5>
+            <img src="./img/balanca.svg" alt="">
+          </div>
+          <p class="indice-bpm">77 <span class="feature-indice">kgs</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- Melhores sua vida -->
+    <section class="wrapper-extras m-3 pt-3">
+      <h4 class="my-4">Melhore sua vida</h4>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- Accordion #1 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <span class="icon-accordion"><img src="./img/monitor-cardiaco.svg" alt=""></span> Monitor cardíaco
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet nunc id libero tempor dapibus.
+                Nullam pretium in ligula eu consectetur. Mauris nec fermentum ipsum. Suspendisse vel dapibus tortor.
+                Proin interdum nibh non justo fringilla, vel pharetra nisl elementum. Maecenas condimentum porttitor
+                arcu ut cursus. Sed vestibulum nulla interdum, tincidunt urna id, commodo sem. Proin a lectus in magna
+                scelerisque interdum at vulputate mauris. Morbi pellentesque enim finibus, dapibus turpis in, congue
+                diam. Aliquam semper tincidunt dui, sed ultrices massa. Vestibulum eu tincidunt libero. Integer
+                consectetur, massa vel fermentum tempor, orci mi ultricies lectus, sed rhoncus dui sem id neque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion #2 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <span class="icon-accordion"><img src="./img/calorias-consumidas.svg" alt=""></span> Calorias consumidas
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet nunc id libero tempor dapibus.
+                Nullam pretium in ligula eu consectetur. Mauris nec fermentum ipsum. Suspendisse vel dapibus tortor.
+                Proin interdum nibh non justo fringilla, vel pharetra nisl elementum. Maecenas condimentum porttitor
+                arcu ut cursus. Sed vestibulum nulla interdum, tincidunt urna id, commodo sem. Proin a lectus in magna
+                scelerisque interdum at vulputate mauris. Morbi pellentesque enim finibus, dapibus turpis in, congue
+                diam. Aliquam semper tincidunt dui, sed ultrices massa. Vestibulum eu tincidunt libero. Integer
+                consectetur, massa vel fermentum tempor, orci mi ultricies lectus, sed rhoncus dui sem id neque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion #3 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <span class="icon-accordion"><img src="./img/relatorios.svg" alt=""></span> Relatórios
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet nunc id libero tempor dapibus.
+                Nullam pretium in ligula eu consectetur. Mauris nec fermentum ipsum. Suspendisse vel dapibus tortor.
+                Proin interdum nibh non justo fringilla, vel pharetra nisl elementum. Maecenas condimentum porttitor
+                arcu ut cursus. Sed vestibulum nulla interdum, tincidunt urna id, commodo sem. Proin a lectus in magna
+                scelerisque interdum at vulputate mauris. Morbi pellentesque enim finibus, dapibus turpis in, congue
+                diam. Aliquam semper tincidunt dui, sed ultrices massa. Vestibulum eu tincidunt libero. Integer
+                consectetur, massa vel fermentum tempor, orci mi ultricies lectus, sed rhoncus dui sem id neque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion #4 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              <span class="icon-accordion"><img src="./img/exames.svg" alt=""></span>Exames
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet nunc id libero tempor dapibus.
+                Nullam pretium in ligula eu consectetur. Mauris nec fermentum ipsum. Suspendisse vel dapibus tortor.
+                Proin interdum nibh non justo fringilla, vel pharetra nisl elementum. Maecenas condimentum porttitor
+                arcu ut cursus. Sed vestibulum nulla interdum, tincidunt urna id, commodo sem. Proin a lectus in magna
+                scelerisque interdum at vulputate mauris. Morbi pellentesque enim finibus, dapibus turpis in, congue
+                diam. Aliquam semper tincidunt dui, sed ultrices massa. Vestibulum eu tincidunt libero. Integer
+                consectetur, massa vel fermentum tempor, orci mi ultricies lectus, sed rhoncus dui sem id neque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Chart JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.0/dist/chart.min.js"></script>
+
+
+<!-- Chamar ChartIMC -->
+<script>
+  var ctx = document.getElementById('chartHome').getContext('2d');
+
+
+
+
+
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Jan', 'Fev', 'Mar'],
+      datasets: [{
+        data: [
+          160,
+          100,
+          115
+        ],
+        backgroundColor: '#26222C'
+      }],
+      borderWIdth: 4,
+      borderColor: '#26222C'
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+
+  });
+
+</script>
+
+<!-- Chamar ChartCalorias -->
+<script>
+  var ctx = document.getElementById('chartCalorias').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['01/06', '15/06', '30/06'],
+      datasets: [{
+        data: [
+          1000,
+          1159,
+          800
+
+        ],
+        backgroundColor: '#26222C'
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: false
+        },
+        title: {
+          display: false
+        },
+        subtitle: {
+          display: false
+        }
+      },
+      scales: {
+        y: {
+          stacked: true
+        }
+      }
+    }
+
+  });
+
+</script>
+
+</html>

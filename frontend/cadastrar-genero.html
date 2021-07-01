@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Gênero</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Range Circle -->
+  <link rel="stylesheet" href="./vendor/css/roundslider.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="cadastroInicial">
+  <main class="m-4">
+    <!-- Link voltar e titulo -->
+    <div class="d-flex mb-5 pb-2 align-items-center">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M22 11.5V12.5C22 12.6326 21.9473 12.7598 21.8536 12.8535C21.7598 12.9473 21.6326 13 21.5 13H5.33L9.78 17.44C9.82686 17.4865 9.86406 17.5418 9.88945 17.6027C9.91483 17.6636 9.9279 17.729 9.9279 17.795C9.9279 17.861 9.91483 17.9263 9.88945 17.9873C9.86406 18.0482 9.82686 18.1035 9.78 18.15L9.07 18.85C9.02352 18.8968 8.96822 18.934 8.90729 18.9594C8.84636 18.9848 8.78101 18.9979 8.715 18.9979C8.64899 18.9979 8.58364 18.9848 8.52271 18.9594C8.46178 18.934 8.40648 18.8968 8.36 18.85L2.22 12.72C2.07931 12.5795 2.00018 12.3888 2 12.19V11.81C2.0023 11.6116 2.08112 11.4217 2.22 11.28L8.36 5.14997C8.40648 5.10311 8.46178 5.06591 8.52271 5.04053C8.58364 5.01514 8.64899 5.00208 8.715 5.00208C8.78101 5.00208 8.84636 5.01514 8.90729 5.04053C8.96822 5.06591 9.02352 5.10311 9.07 5.14997L9.78 5.85997C9.82656 5.9056 9.86356 5.96005 9.88881 6.02015C9.91406 6.08025 9.92707 6.14478 9.92707 6.20997C9.92707 6.27516 9.91406 6.3397 9.88881 6.3998C9.86356 6.4599 9.82656 6.51435 9.78 6.55997L5.33 11H21.5C21.6326 11 21.7598 11.0527 21.8536 11.1464C21.9473 11.2402 22 11.3674 22 11.5Z"
+          fill="#fff" />
+      </svg>
+      <h5 class="text-light mx-auto title-adicionar-genero">Adicione sua orientação sexual</h5>
+    </div>
+
+
+    <!-- Btn Sexo -->
+    <section>
+      <div class="d-flex flex-column text-center">
+        <a href="cadastrar-nascimento.html" class="mx-auto btn-genero-masc">
+          <svg class="icon-genero" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M34.0625 5H27.1875C26.6719 5 26.25 5.42188 26.25 5.9375V6.5625C26.25 7.07812 26.6719 7.5 27.1875 7.5H30.7344L23.2734 14.9609C21.3438 13.4219 18.9062 12.5 16.25 12.5C10.0391 12.5 5 17.5391 5 23.75C5 29.9609 10.0391 35 16.25 35C22.4609 35 27.5 29.9609 27.5 23.75C27.5 21.0938 26.5781 18.6563 25.0391 16.7266L32.5 9.26562V12.8125C32.5 13.3281 32.9219 13.75 33.4375 13.75H34.0625C34.5781 13.75 35 13.3281 35 12.8125V5.9375C35 5.42188 34.5781 5 34.0625 5ZM16.25 32.5C11.4141 32.5 7.5 28.5938 7.5 23.75C7.5 18.9141 11.4062 15 16.25 15C21.0859 15 25 18.9062 25 23.75C25 28.5859 21.0938 32.5 16.25 32.5Z"
+              fill="#FDFDFD" />
+          </svg>
+          <p>Homem</p>
+        </a>
+        <a href="cadastrar-nascimento.html" class="mx-auto btn-genero-fem">
+          <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M31.25 13.75C31.25 7.53906 26.2109 2.5 20 2.5C13.7891 2.5 8.75 7.53906 8.75 13.75C8.75 19.5391 13.125 24.3125 18.75 24.9297V30H14.6875C14.1719 30 13.75 30.4219 13.75 30.9375V31.5625C13.75 32.0781 14.1719 32.5 14.6875 32.5H18.75V36.5625C18.75 37.0781 19.1719 37.5 19.6875 37.5H20.3125C20.8281 37.5 21.25 37.0781 21.25 36.5625V32.5H25.3125C25.8281 32.5 26.25 32.0781 26.25 31.5625V30.9375C26.25 30.4219 25.8281 30 25.3125 30H21.25V24.9297C26.875 24.3125 31.25 19.5391 31.25 13.75ZM11.25 13.75C11.25 8.91406 15.1562 5 20 5C24.8359 5 28.75 8.90625 28.75 13.75C28.75 18.5859 24.8438 22.5 20 22.5C15.1641 22.5 11.25 18.5938 11.25 13.75Z"
+              fill="#FDFDFD" />
+          </svg>
+          <p>Mulher</p>
+        </a>
+      </div>
+    </section>
+    <!-- // Btn Sexo -->
+
+    <div class="mt-5 pt-5">
+      <a class="btn btn-primary btn-outline" href="cadastrar-nascimento.html" role="button">Próximo</a>
+    </div>
+  </main>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
